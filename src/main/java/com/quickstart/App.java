@@ -8,5 +8,6 @@ public class App {
         System.out.println("Hello World!");
         System.out.println("test merge");
         System.out.println("test merge2");
+        System.out.println("test change1");
     }
 }
