@@ -7,7 +7,7 @@ public class HelloWorld {
     public static void main(String[] args) {
         final Random rand = new Random();
 
-        char[] arr = {'a', 'c', 'z'};
+        char[] arr = {'a','a', 'c', 'z'};
 
         int alphaNumIdx = rand.nextInt(HelloWorld.ALPHA_NUMS.length);
         char e = HelloWorld.ALPHA_NUMS[alphaNumIdx];
