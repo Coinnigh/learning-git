@@ -1,10 +1,17 @@
 package com.quickstart;
 
+import java.io.*;
+import java.util.ArrayList;
 import java.util.Random;
 
 public class HelloWorld {
 
     public static void main(String[] args) {
+        try {
+            readFromTextFile("E:\\工作记录\\20200310_timeline测试\\cluster_job_monitor\\tez.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         final Random rand = new Random();
 
         char[] arr = {'a', 'c', 'z'};
@@ -26,4 +33,18 @@ public class HelloWorld {
     static final char[] ALPHA_NUMS = new char[]{'a', 'b', 'c', 'd', 'e', 'f',
             'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r',
             's', 't', 'u', 'v', 'w', 'x', 'y', 'z', ' '};
+
+    public static ArrayList<String> readFromTextFile(String pathname) throws IOException {
+        ArrayList<String> strArray = new ArrayList<String>();
+        File filename = new File(pathname);
+        InputStreamReader reader = new InputStreamReader(new FileInputStream(filename));
+        BufferedReader br = new BufferedReader(reader);
+        String line = "";
+        line = br.readLine();
+        while(line != null) {
+            strArray.add(line);
+            line = br.readLine();
+        }
+        return strArray;
+    }
 }
