@@ -15,6 +15,7 @@ public class App {
         System.out.println("test merge4");
         System.out.println("test merge6");
 
+        System.out.println("test change1");
     }
 
 }
