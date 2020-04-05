@@ -13,6 +13,7 @@ public class App {
         System.out.println("test merge2");
         System.out.println("test merge3");
         System.out.println("test merge4");
+        System.out.println("test merge6");
 
     }
 
