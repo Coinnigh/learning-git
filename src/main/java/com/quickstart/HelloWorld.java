@@ -8,6 +8,8 @@ public class HelloWorld {
         String a;
         String w;
 
+        String hello;
+
         final Random rand = new Random();
 
         char[] arr = {'a', 'c', 'z'};
