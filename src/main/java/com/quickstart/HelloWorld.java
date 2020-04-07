@@ -5,6 +5,9 @@ import java.util.Random;
 public class HelloWorld {
 
     public static void main(String[] args) {
+        String a;
+        String w;
+
         final Random rand = new Random();
 
         char[] arr = {'a', 'c', 'z'};
